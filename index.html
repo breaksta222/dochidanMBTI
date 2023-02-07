@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="도치단 MBTI">
+  <meta name="description" content="도치단 MBTI">
+
+  <!-- sns share -->
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="도치단 MBTI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/share.png" />
+  <meta property="og:description" content="도치단이 좋아하는 은서는?" />
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
+
+  <title>도치단 MBTI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/qna.css">
+  <link rel="stylesheet" href="./css/animation.css">
+  <link rel="stylesheet" href="./css/result.css">
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+  //Kakao.init(JavaScript Key);
+  //Kakao.isInitialized();
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <section id="main" class="mx-auto my-5 py-3 px-3">
+      <h1 class="pt-3">도치단의 은서유형검사</h1>
+      <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          <img src="./img/main.png" alt="mainImage" class="img-fluid">
+      </div>
+      <p>
+          도치단 취향의 은서를 찾아서! <br>
+          깊게 쉼호흡 후 아래 검사하기를 눌러주세요 ^ㅂ^
+      </p>
+      <h6>(대충 어렵다는 뜻...24시간 소요 예상...)</h6>
+      <button type="button" class="btn btn-outline-primary mt-2" onclick="js:begin()">검사하기</button>
+
+  </section>
+  <section id="qna">
+      
+      <div class="qBox my-5 py-3 mx-auto">
+        더 끌리는 주연이를 눌러주세요!🦔
+        <p>
+          Choose juyeonie you like more!
+        </p>
+      </div>
+      <div class="status mx-0">
+        <div class="statusBar">
+
+        </div>
+      </div>
+
+
+      <div class="row row-cols-1 row-cols-md-2 g-2 answerBox mx-auto ">
+        <div class="col">
+          <div class="card">
+            <img src="./img/main.png" class="card-img-top leftImage" alt="...">           
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./img/main.png" class="card-img-top rightImage" alt="...">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="result" class="mx-auto my-5 py-5 px-3">
+      <h1>당신의 결과는?!</h1>
+      <div class="resultname">
+
+      </div>
+      <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+
+      </div>
+      <div class="resultDesc"></div>
+      <p>
+        당신의 MBTI는 이것이군용 <br>
+        아래 공유하기로 도치단들에게 알려주세요^ㅂ^
+    </p>
+      <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+    </section>
+    <script src="./js/data.js" charset="utf-8"></script>
+    <script src="./js/start.js" charset="utf-8"></script>
+    <script src="./js/share.js" charset="utf-8"></script>
+    <img src="" alt="">
+  </div>
+</body>
+
+</html>
